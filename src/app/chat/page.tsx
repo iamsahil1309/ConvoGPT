@@ -12,7 +12,7 @@ const cards = [
       "Engage in Human-like conversation with our advanced language model.",
   },
   {
-    id: 3,
+    id: 2,
     icon: ZapIcon,
     title: "Instant Responses",
     description:

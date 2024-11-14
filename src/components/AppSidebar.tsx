@@ -13,25 +13,26 @@ import { NewChat } from "./NewChat";
 import ProfileButton from "./ProfileButton";
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
+import ChatRows from "./ChatRows";
 
 export async function AppSidebar() {
-    const session = await auth()
+  const session = await auth();
 
-    if(!session) {
-        redirect("/")
-    }
+  if (!session) {
+    redirect("/");
+  }
 
-    if(!session.user) {
-        redirect("/")
-    }
-    const user = session.user
+  if (!session.user) {
+    redirect("/");
+  }
+  const user = session.user;
   return (
     <>
       <Sidebar>
         <SidebarHeader>
           <SidebarMenu>
             <SidebarMenuItem>
-              <NewChat user= {user} />
+              <NewChat user={user} />
             </SidebarMenuItem>
           </SidebarMenu>
         </SidebarHeader>
@@ -39,7 +40,9 @@ export async function AppSidebar() {
         <SidebarContent>
           <SidebarGroup>
             <SidebarGroupContent>
-              <SidebarMenu>{/* <ChatRows session={session} /> */}</SidebarMenu>
+              <SidebarMenu>
+                <ChatRows session={session} />
+              </SidebarMenu>
             </SidebarGroupContent>
           </SidebarGroup>
         </SidebarContent>
@@ -55,4 +58,3 @@ export async function AppSidebar() {
     </>
   );
 }
-

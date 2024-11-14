@@ -15,8 +15,6 @@ const Chatbox = ({ session }: { session: Session }) => {
   const chatId = usePathname().split("/").pop()!;
 
   const [prompt, setPrompt] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-
   const sendMessage = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
