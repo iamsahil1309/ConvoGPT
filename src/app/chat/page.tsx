@@ -1,4 +1,31 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ClockIcon, MessageSquareIcon, ZapIcon } from "lucide-react";
 import Image from "next/image";
+
+
+const cards = [
+  {
+    id: 1,
+    icon: MessageSquareIcon,
+    title: "Natural Conversation",
+    description:
+      "Engage in Human-like conversation with our advanced language model.",
+  },
+  {
+    id: 3,
+    icon: ZapIcon,
+    title: "Instant Responses",
+    description:
+      "Get immidiate answers to your questions, no matter how complex.",
+  },
+  {
+    id: 3,
+    icon: ClockIcon,
+    title: "Realtime Updates",
+    description:
+      "Receive real-time updates, as you would in a live chat.",
+  },
+];
 
 export default function ChatPage() {
     return(
@@ -36,7 +63,21 @@ export default function ChatPage() {
             <section className="w-full flex items-center justify-center">
                 <div className="container px-4 md:px-6">
                     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                        
+                        {cards.map((card) => (
+                            <Card key={card.id}>
+                                <CardHeader>
+                                    <CardTitle className="flex items-center space-x-2">
+                                        <card.icon className="size-6" />
+                                        <span>{card.title}</span>
+                                    </CardTitle>
+                                </CardHeader>
+                                <CardContent>
+                                    <p className="text-gray-600 dark:text-gray-400">
+                                        {card.description}
+                                    </p>
+                                </CardContent>
+                            </Card>
+                        ) )}
                     </div>
                 </div>
             </section>

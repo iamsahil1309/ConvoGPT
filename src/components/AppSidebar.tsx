@@ -3,6 +3,8 @@ import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
+  SidebarGroup,
+  SidebarGroupContent,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuItem,
@@ -12,7 +14,7 @@ import ProfileButton from "./ProfileButton";
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
 
-async function AppSidebar() {
+export async function AppSidebar() {
     const session = await auth()
 
     if(!session) {
@@ -24,30 +26,33 @@ async function AppSidebar() {
     }
     const user = session.user
   return (
-    <Sidebar>
-      <SidebarHeader>
-        <SidebarMenu>
-          <SidebarMenuItem>
-            <NewChat/>
-          </SidebarMenuItem>
-        </SidebarMenu>
-      </SidebarHeader>
-
-      <SidebarContent>
-        <SidebarMenu>
-            {/* chat list */}
-        </SidebarMenu>
-      </SidebarContent>
-
-      <SidebarFooter>
-        <SidebarMenu>
+    <>
+      <Sidebar>
+        <SidebarHeader>
+          <SidebarMenu>
             <SidebarMenuItem>
-                <ProfileButton user={user}/>
+              <NewChat user= {user} />
             </SidebarMenuItem>
-        </SidebarMenu>
-      </SidebarFooter>
-    </Sidebar>
+          </SidebarMenu>
+        </SidebarHeader>
+
+        <SidebarContent>
+          <SidebarGroup>
+            <SidebarGroupContent>
+              <SidebarMenu>{/* <ChatRows session={session} /> */}</SidebarMenu>
+            </SidebarGroupContent>
+          </SidebarGroup>
+        </SidebarContent>
+
+        <SidebarFooter>
+          <SidebarMenu>
+            <SidebarMenuItem>
+              <ProfileButton user={user} />
+            </SidebarMenuItem>
+          </SidebarMenu>
+        </SidebarFooter>
+      </Sidebar>
+    </>
   );
 }
 
-export default AppSidebar;
