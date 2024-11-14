@@ -8,6 +8,7 @@ import { usePathname } from "next/navigation";
 import { FormEvent, useState } from "react";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { db } from "@/lib/firebase";
+import ChatMessage from "./ChatMessage";
 
 const Chatbox = ({ session }: { session: Session }) => {
   const user = session.user!;
@@ -49,6 +50,7 @@ const Chatbox = ({ session }: { session: Session }) => {
   return (
     <>
       {/* chat message */}
+      <ChatMessage chatId={chatId} session={session} />
 
       <div className="p-4 border-t">
         <form onSubmit={sendMessage} className="flex space-x-2">
