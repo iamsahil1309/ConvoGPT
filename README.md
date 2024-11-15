@@ -111,11 +111,14 @@ Visit [http://localhost:3000](http://localhost:3000) to see the app running loca
 
 Here are some screenshots of the app in action:
 
-![Home Page](./screenshots/home.png)  
-*Interactive Chat Interface*
 
-![Chat Interface](./screenshots/chat.png)  
-*AI and User Conversation*
+![Screenshot (19)](https://github.com/user-attachments/assets/8b1bfcc3-087a-49a7-9388-f11500f988ae)
+
+
+![Screenshot (17)](https://github.com/user-attachments/assets/2a3ad234-09f0-40c5-adf7-9dd0d0f09713)
+
+![Screenshot (18)](https://github.com/user-attachments/assets/2b1c3dc3-65d5-462b-a547-60c42421bd1b)
+
 
 ---
 
