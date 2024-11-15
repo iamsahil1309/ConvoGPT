@@ -1,12 +1,10 @@
-Here's a sample README file with detailed information about your project "ConvoGPT" built using Next.js, TailwindCSS, Firebase, and XAI (Explainable AI). I've included sections like project description, installation instructions, features, and a section to provide the live link.
 
----
 
 # 🌐 ConvoGPT - AI-powered Conversational Application
 
 ConvoGPT is a modern conversational app powered by cutting-edge AI. Built with **Next.js**, **TailwindCSS**, **Firebase**, and **Explainable AI (XAI)**, it enables users to engage in intelligent, interactive conversations with a robust backend powered by Firebase. This project integrates AI features to provide transparent, understandable AI-powered responses, making it easy to trust and interact with.
 
-> 🔗 [Live Demo](#) *(Click to visit the live version of the app)*
+> 🔗 [Live Demo](#) *[(Click to visit the live version of the app)](https://convo-gpt-two.vercel.app/)*
 
 ## 🚀 Features
 
