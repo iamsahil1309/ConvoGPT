@@ -4,7 +4,7 @@
 
 ConvoGPT is a modern conversational app powered by cutting-edge AI. Built with **Next.js**, **TailwindCSS**, **Firebase**, and **Explainable AI (XAI)**, it enables users to engage in intelligent, interactive conversations with a robust backend powered by Firebase. This project integrates AI features to provide transparent, understandable AI-powered responses, making it easy to trust and interact with.
 
-> 🔗 [Live Demo](#) https://convo-gpt-two.vercel.app/
+> 🔗 https://convo-gpt-two.vercel.app/
 
 ## 🚀 Features
 
@@ -33,7 +33,7 @@ ConvoGPT is a modern conversational app powered by cutting-edge AI. Built with *
 - **Next.js** - React-based framework for building server-side rendered (SSR) web applications.
 - **TailwindCSS** - Utility-first CSS framework for building modern user interfaces.
 - **Firebase** - Backend-as-a-Service platform providing authentication, real-time databases, and cloud functions.
-- **XAI (Explainable AI)** - Making machine learning models interpretable and providing insights into their decisions.
+- **XAI** - Making machine learning models interpretable and providing insights into their decisions.
 
 ---
 
@@ -131,24 +131,11 @@ We welcome contributions to improve **ConvoGPT**! Please follow these steps to c
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🔗 Links
-
-- [GitHub Repository](https://github.com/your-username/convo-gpt)
-- [Live Demo](#) *(Click to visit the live version of the app)*
-- [Firebase](https://firebase.google.com/)
-
----
 
 ## 👨‍💻 Author
 
-Made with ❤️ by **Your Name**
+Made with ❤️ by **Sahil Singh**
 
 ---
 
-By following this structure, your README will be both informative and visually appealing, making it easy for anyone to understand the project and how to get started with it. Feel free to replace placeholders like `your-username` or `your-name` with actual values!
+
